@@ -20,9 +20,9 @@
             "type": "string",
             "title": "Suffix (e.g. Jr. II etc.)"
         },
-        "birth_date": {
-            "type": "number",
-            "title": "Date of Birth (MMDDYYYY)",
+        "birthday": {
+            "type": "string",
+            "title": "Date of Birth",
             "format": "date",
             "br_required": true
         },
@@ -39,10 +39,10 @@
             "br_required": true
         },
         "fax": {
-            "type": "number",
+            "type": "string",
             "title": "Fax number"
         },
-        "reg_address_section": {
+        "reg_address_section_title": {
             "type": "string",
             "title": "Residence Address",
             "format": "title"
@@ -52,14 +52,11 @@
             "title": "Address where you are registered to vote",
             "format": "hidden-field"
         },
-        "reg_address_line_1": {
+        //reg_address will need to be split onto two lines for the form, (street address and apt)//
+        "reg_address: {
             "type": "string",
             "title": "Residence Street Address (street number and name)",
             "br_required": true
-        },
-        "reg_address_line_2": {
-            "type": "string",
-            "title": "Apt Number"
         },
         "reg_city": {
             "type": "string",
@@ -72,7 +69,7 @@
             "br_required": true
         },
         "reg_zipcode": {
-            "type": "number",
+            "type": "string",
             "title": "Zip Code",
             "format": "zipcode",
             "br_required": true
@@ -84,7 +81,7 @@
         },
         "municipality_title": {
             "type": "string",
-            "title": "Check one of the following (that applies to your voter registeration address)",
+            "title": "Check one of the following (that applies to your voter registration address)",
             "format": "title"
         },
         "municipality_town_checkbox": {
@@ -151,26 +148,27 @@
             "title": "If you select to receive your ballot by mail, this is the address where your ballot will be sent",
             "format": "hidden-field"
         },
-        "mail_address_line_1": {
+    //mail address split on form into street and apt//
+        "mail_address": {
             "type": "string",
-            "title": "Mailing Street Address (Street name and number)"
-        },
-        "mail_address_line_2": {
-            "type": "string",
-            "title": "Mailing Address Apt Number"
+            "title": "Mailing Street Address"
+            "br_required": true
         },
         "mail_city": {
             "type": "string",
             "title": "Mailing City"
+            "br_required": true
         },
         "mail_state": {
             "type": "string",
             "title": "Mailing State"
+            "br_required": true
         },
         "mail_zip": {
-            "type": "number",
+            "type": "string",
             "title": "Mailing Zipcode",
             "format": "zipcode"
+            "br_required": true
         },
         "email_ballot": {
             "type": "string",
@@ -232,21 +230,6 @@
         "agent_middle_name": {
             "type": "string",
             "title": "Agent's Middle Name"
-        },
-        "military_checkbox": {
-            "type": "boolean",
-            "title": "Check this box if you are in Military",
-            "format": "checkbox"
-        },
-        "permanent_overseas_checkbox": {
-            "type": "boolean",
-            "title": "Check this box if you live permanently overseas",
-            "format": "checkbox"
-        },
-        "temporary_overseas_checkbox": {
-            "type": "boolean",
-            "title": "Check this box if you live temporarily overseas",
-            "format": "checkbox"
         }
     }
 }
