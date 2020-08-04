@@ -1,0 +1,252 @@
+{
+    "type": "object",
+    "title": "Basic Information About You",
+    "properties": {
+        "last_name": {
+            "type": "string",
+            "title": "Last Name",
+            "br_required": true
+        },
+        "first_name": {
+            "type": "string",
+            "title": "First Name",
+            "br_required": true
+        },
+        "middle_name": {
+            "type": "string",
+            "title": "Middle Name"
+        },
+        "suffix": {
+            "type": "string",
+            "title": "Suffix (e.g. Jr. II etc.)"
+        },
+        "birth_date": {
+            "type": "number",
+            "title": "Date of Birth (MMDDYYYY)",
+            "format": "date",
+            "br_required": true
+        },
+        "email": {
+            "type": "string",
+            "title": "Email Address",
+            "format": "email",
+            "br_required": true
+        },
+        "phone": {
+            "type": "number",
+            "title": "Phone Number",
+            "format": "phone-us",
+            "br_required": true
+        },
+        "fax": {
+            "type": "number",
+            "title": "Fax number"
+        },
+        "reg_address_section": {
+            "type": "string",
+            "title": "Residence Address",
+            "format": "title"
+        },
+        "reg_address_description": {
+            "type": "string",
+            "title": "Address where you are registered to vote",
+            "format": "hidden-field"
+        },
+        "reg_address_line_1": {
+            "type": "string",
+            "title": "Residence Street Address (street number and name)",
+            "br_required": true
+        },
+        "reg_address_line_2": {
+            "type": "string",
+            "title": "Apt Number"
+        },
+        "reg_city": {
+            "type": "string",
+            "title": "City",
+            "br_required": true
+        },
+        "reg_state": {
+            "type": "string",
+            "title": "State",
+            "br_required": true
+        },
+        "reg_zipcode": {
+            "type": "number",
+            "title": "Zip Code",
+            "format": "zipcode",
+            "br_required": true
+        },
+        "reg_county": {
+            "type": "string",
+            "title": "County",
+            "br_required": true
+        },
+        "municipality_title": {
+            "type": "string",
+            "title": "Check one of the following (that applies to your voter registeration address)",
+            "format": "title"
+        },
+        "municipality_town_checkbox": {
+            "type": "boolean",
+            "title": "Town",
+            "format": "checkbox"
+        },
+        "municipality_village_checkbox": {
+            "type": "boolean",
+            "title": "Village",
+            "format": "checkbox"
+        },
+        "municipality_city_checkbox": {
+            "type": "boolean",
+            "title": "City",
+            "format": "checkbox"
+        },
+        "reg_municipality": {
+            "type": "string",
+            "title": "Town/Village/City Name",
+            "br_required": true
+        },
+        "ballot_form_title": {
+            "type": "string",
+            "title": "I prefer to receive my ballot by (check one of the following).",
+            "format": "title"
+        },
+        "ballot_form_description": {
+            "type": "string",
+            "title": "Voter must have a computer and printer when receiving a ballot by fax or email. Voted ballots must be returned by mail. ",
+            "format": "hidden-field"
+        },
+        "mail_checkbox": {
+            "type": "boolean",
+            "title": "Mail (if yes, enter ballot mailling address below)",
+            "format": "checkbox"
+        },
+        "clerks_office_checkbox": {
+            "type": "boolean",
+            "title": "Vote in Clerk's office",
+            "format": "checkbox"
+        },
+        "care_facility_name": {
+            "type": "string",
+            "title": "Care Facility Name (if applicable)"
+        },
+        "fax_checkbox": {
+            "type": "boolean",
+            "title": "Fax (if yes, enter fax number below)",
+            "format": "checkbox"
+        },
+        "email_checkbox": {
+            "type": "boolean",
+            "title": "Email (if yes, enter email address below)",
+            "format": "checkbox"
+        },
+        "mailing_info_title": {
+            "type": "string",
+            "title": "Ballot Mailing Address",
+            "format": "title"
+        },
+        "mail_address_description": {
+            "type": "string",
+            "title": "If you select to receive your ballot by mail, this is the address where your ballot will be sent",
+            "format": "hidden-field"
+        },
+        "mail_address_line_1": {
+            "type": "string",
+            "title": "Mailing Street Address (Street name and number)"
+        },
+        "mail_address_line_2": {
+            "type": "string",
+            "title": "Mailing Address Apt Number"
+        },
+        "mail_city": {
+            "type": "string",
+            "title": "Mailing City"
+        },
+        "mail_state": {
+            "type": "string",
+            "title": "Mailing State"
+        },
+        "mail_zip": {
+            "type": "number",
+            "title": "Mailing Zipcode",
+            "format": "zipcode"
+        },
+        "email_ballot": {
+            "type": "string",
+            "title": "If you preferred to receive your ballot by email, this is the email where your ballot will be sent",
+            "format": "email"
+        },
+        "fax_ballot": {
+            "type": "number",
+            "title": "If you preferred to receive your ballot by fax, this is the fax number where your ballot will be sent"
+        },
+        "ballot_request_title": {
+            "type": "string",
+            "title": "I request an absentee ballot to be sent me for (mark only one)",
+            "format": "title"
+        },
+        "general_election_checkbox": {
+            "type": "boolean",
+            "title": "The election on the following date (enter the date in the field below)",
+            "format": "checkbox"
+        },
+        "general_election_date": {
+            "type": "string",
+            "title": "Enter the date of the election for the ballot you are requesting (if general election, enter 11/03/2020",
+            "format": "date"
+        },
+        "permanent_ballot_list_opt_in": {
+            "type": "boolean",
+            "title": "All elections from today's date through the end of the current year (ending 12/31)",
+            "format": "checkbox"
+        },
+        "indef_confined": {
+            "type": "boolean",
+            "title": "I certify that I am indefintely confined because of age, illness, infirmity, or disability and request absentee ballots to be sent to automatically until I am no longer confined or I fail to return my ballot. (for indefinitely-confined voters ONLY)",
+            "format": "checkbox"
+        },
+        "hospitalized_voter_title": {
+            "type": "string",
+            "title": "The following are for temporarily hospitalized voters only:",
+            "format": "title"
+        },
+        "hospitalized_voter_checkbox": {
+            "type": "boolean",
+            "title": "I certify that I cannot appear at the polling place on election because I am hospitalized and appoint the following person to serve asmy agent, pursuant to Wis. Stat. 6.86(3)",
+            "format": "checkbox"
+        },
+        "agent_description": {
+            "type": "string",
+            "title": "AGENT: I certify that I am the duly appointed agent of the hospitalized absentee elector, that the absentee ballot to be received by me is received solely for the benefit of the above named hospitalized elector, and that such ballot will be promptly transmitted by me to that elector  and then returned to the municipal clerk or the proper polling place. ",
+            "format": "hidden-field"
+        },
+        "agent_last_name": {
+            "type": "string",
+            "title": "Agent's Last Name"
+        },
+        "agent_first_name": {
+            "type": "string",
+            "title": "Agent's First Name"
+        },
+        "agent_middle_name": {
+            "type": "string",
+            "title": "Agent's Middle Name"
+        },
+        "military_checkbox": {
+            "type": "boolean",
+            "title": "Check this box if you are in Military",
+            "format": "checkbox"
+        },
+        "permanent_overseas_checkbox": {
+            "type": "boolean",
+            "title": "Check this box if you live permanently overseas",
+            "format": "checkbox"
+        },
+        "temporary_overseas_checkbox": {
+            "type": "boolean",
+            "title": "Check this box if you live temporarily overseas",
+            "format": "checkbox"
+        }
+    }
+}
