@@ -1,0 +1,60 @@
+{
+    "fieldnames": [
+        {
+            "name": "Last Name",
+            "maps_to": "last_name"
+        },
+        {
+            "name": "First Name",
+            "maps_to": "first_name"
+        },
+        {
+            "name": "Middle Name",
+            "maps_to": "middle_name"
+        },
+        {
+            "name": "Suffix eg Jr II etc",
+            "maps_to": "suffix"
+        },
+        {
+            "name": "Date of Birth MMDDYYYY",
+            "maps_to": "birth_date"
+        },
+        {
+            "name": "Email",
+            "maps_to": "email"
+        },
+        {
+            "name": "Phone",
+            "maps_to": "phone"
+        },
+        {
+            "name": "City",
+            "maps_to": "reg_city"
+        },
+        {
+            "name": "State",
+            "maps_to": "reg_state"
+        },
+        {
+            "name": "Zipcode",
+            "maps_to": "reg_zipcode"
+        },
+        {
+            "name": "County",
+            "maps_to": "reg_county"
+        },
+        {
+            "name": "City_2",
+            "maps_to": "mail_city"
+        },
+        {
+            "name": "mail_state",
+            "maps_to": "mail_state"
+        },
+        {
+            "name": "All Elect",
+            "maps_to": "permanent_ballot_list_opt_in"
+        }
+    ]
+}
